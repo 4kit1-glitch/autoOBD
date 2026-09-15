@@ -63,9 +63,8 @@ install_flatpak() {
     case "$pkg_man" in
         "dnf") run_privileged dnf install -y flatpak;;
         "apt") run_privileged apt install update && {
-            echo "proceeding.."
-            sleep 1
-            clear
+            echo "proceeding..."
+            echo
             run_privileged apt install -y flatpak
             }
             ;;
