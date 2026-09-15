@@ -45,3 +45,32 @@ get_from_release() {
 get_package_manager() {
     get_from_release
 }
+
+confirm_installation() {
+    if command -v flatpak &> /dev/null; then
+        echo "Flatpak present continue to install..."
+        return 0
+    fi
+    return 1
+}
+
+install_flatpak() {
+    local pkg_man
+    pkg_man="$(get_package_manager)"
+    confirm_installation && {
+        return 0
+    }
+    case "$pkg_man" in
+        "dnf") run_privileged dnf install -y flatpak;;
+        "apt") run_privileged apt install update && {
+            echo "proceeding.."
+            sleep 1
+            clear
+            run_privileged apt install -y flatpak
+            }
+            ;;
+        *) echo "Package manager: $pkg_man not supported" >&2
+            exit 1
+            ;;
+    esac
+}
