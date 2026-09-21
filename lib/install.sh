@@ -63,7 +63,9 @@ install_v2l4loopback() {
 }
 
 setup_loopback() {
-    run_privileged echo -n "options v4l2loopback exclusive_caps=1 card_label="Virtual Camera" devices=1" > "/etc/modprobe.d/v4l2loopback.conf"
-    
+    run_privileged echo -n "options v4l2loopback exclusive_caps=1 card_label="Virtual Camera" devices=1" > "/etc/modprobe.d/v4l2loopback.conf" || {
+        printf "failed to setup loop back\n" >&2
+    }
+
     run_privileged modprobe -r v4l2loopback && run_privileged modprobe v4l2loopback
 }
