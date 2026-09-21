@@ -136,26 +136,13 @@ If the virtual camera is not detected by OBS after installation, try restarting 
 
 ## Demo Video
 
-Place your demo video here.
-
-Example:
-
-- Demo walkthrough: [Add video link here]
-- Feature preview: [Add video link here]
 
 ## Screenshots
-
-Place screenshots of the setup process and OBS virtual camera output here.
-
-Example sections:
-
 ### Installation screen
 
-![Installation screenshot placeholder](https://placehold.co/1200x700?text=Installation+Screenshot)
-
 ### OBS virtual camera setup
-
-![OBS screenshot placeholder](https://placehold.co/1200x700?text=OBS+Virtual+Camera)
+<img width="1366" height="431" alt="Screenshot From 2026-09-21 03-17-41" src="https://github.com/user-attachments/assets/58c6f381-727c-4cfe-8427-674e2eaa22c1" />
+<img width="1054" height="666" alt="Screenshot From 2026-09-21 03-15-23" src="https://github.com/user-attachments/assets/29db3314-c7bf-4c15-b92b-a492f03fc908" />
 
 ## License
 
