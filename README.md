@@ -1,7 +1,5 @@
 # autoOBD
 
-Author: Kengah Ireneaus
-
 Repository: https://github.com/4kit1-glitch/autoOBD
 
 A lightweight Linux setup script for installing and configuring OBS Studio with the DroidCam plugin and the v4l2loopback virtual camera module.
@@ -170,8 +168,6 @@ Copyright 2026 Kengah Ireneaus
 ## Contributing
 
 Contributions are welcome. If you want to improve compatibility, add support for more distributions, or enhance the installation workflow, feel free to open a pull request.
-
-If you are planning to contribute, please keep the project documentation clear and preserve the Apache 2.0 licensing terms.
 
 ## Project Status
 
