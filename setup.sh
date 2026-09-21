@@ -21,7 +21,7 @@ done
 main() {
     printf "Setting up obs-studio and driodcam plugin\n"
 
-    intall_obs || {
+    install_obs || {
         printf "failed to install OBS studio\n" >&2
         printf "intall manually" >&2
         exit 1
